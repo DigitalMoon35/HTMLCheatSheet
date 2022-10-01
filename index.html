@@ -4,6 +4,87 @@
         <title>My HTML Cheat Sheet</title>
     </head>
     <body>
+        <h1>My HTML Cheat Sheet</h1>
+        <h2>Headings</h2>
+        <p>
+            Headings are from H1 - H6. A page should only have one H1, because google's webcrawlers use 
+            them for SEO.
+        </p>
+        <h2>Paragaphs</h2>
+        <p>
+            Paragraphs are used to contain long forms of text, like what you are reading right now. They
+            use `p` tags.
+        </p>
+        <h2>Lists</h2>
+        <h3>Unordered Lists</h3>
+        <p>
+            Unordered lists are marked with bullet points and go in `ul` tags. Each list item goes in an `li` tag.
+        </p>
         
+        <h4>Types of lists:</h4>
+        <ul>
+            <li>Ordered Lists (`ol`)</li>
+            <li>Unordered Lists (`ul`)</li>
+        </ul>
+
+        <h3>Ordered Lists</h3>
+        <p>
+            Ordered lists are numbered and go in `ol` tags. Each list item goes in an `li` tag.
+        </p>
+        <h4>Polya's Problem Solving Framework</h4>
+        <ol>
+            <li>Understand the problem</li>
+            <li>Come up with a plan</li>
+            <li>Carry out the plan</li>
+            <li>Go back and improve your solution</li>
+        </ol>
+        <h2>Links</h2>
+        <p>Links allow a user to click on some text, and it brings them to a different section of the page, or to a different site completely. Like this for example. <a href="https://duckduckgo.com" target="_blank">Go to DuckDuckGo to search for more information</a></p>
+        <p>Setting `target="_blank"` will open the link in a new window. See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">MDN</a>
+        </p>
+
+        <h2>Images</h2>
+        <p>
+            You can use the img tag to add images to your page.
+            <img src="http://wanderlord.com/wp-content/uploads/2015/11/Lemur-5-150x150.jpg" alt="picture of a really cute black and orange lemur.">
+        </p>
+
+        <h2>Tables</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Insect</th>
+                    <th scope="col">Family</th>
+                    <th scope="col">Fact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Ladybug</th>
+                    <td>Coccinellidae</td>
+                    <td>Can eat more than 5,000 insects</td>
+                </tr>
+                <tr>
+                    <th scope="row"> Fruit Flies</th>
+                    <td>Drosophilidae</td>
+                    <td>First living creatures in outer space!</td>
+                </tr>
+                <tr>
+                    <th scope="row">Caterpillars</th>
+                    <td>Heterobathmiidae</td>
+                    <td>They have 12 eyes!</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td>I had no idea!</td>
+                    <td>Those are some really neat facts!</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>
+            The table is great for tablular data. You define the table with the `table` tag. If you table had a header, that is, row that should be considered as the column header, you add a `thead`. Then you add a `tbody` wich should contain the data of your table. If your table has a footer, that is, rows that summerize the tabular data, then you add `tfoot`, too. Finally 
+        </p>
     </body>
 </html>
